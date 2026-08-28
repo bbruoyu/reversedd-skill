@@ -5,6 +5,15 @@
 
 > 平时都是公司背调候选人，这个 skill 帮候选人反向背调公司。
 
+<p align="center">
+  <img src="assets/example_report.png" alt="反向背调报告示例 · 风险雷达 + 关系穿透图 + 红黄绿灯" width="100%">
+</p>
+
+<p align="center"><sub>
+  ▲ 完整报告示例 · 风险雷达 + 关系穿透图 + 关键证据（L1·L3·L4 来源徽章）+ 面试反问 + 决策建议<br>
+  👉 渲染你自己的报告：<code>python scripts/render_report.py 你的报告.md -o 你的报告.html</code>
+</sub></p>
+
 ## 它能做什么
 
 - 跨公开平台聚合口碑与风险信号（看准 / 职友集 / 牛客 / 黑猫 / **知乎（口碑主力）** / 贴吧 / 微博 / 新闻）；小红书无法主动检索，其真实员工口碑由知乎 + 贴吧 + 微博补强
