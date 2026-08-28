@@ -79,6 +79,8 @@
     {"center":{"label":"被背调主体"},"nodes":[{"id":"u1","label":"实控人","sub":"持股%","type":"person","risk":"a"}],"edges":[{"from":"center","to":"u1","label":"持股"}],"caption":"一句话穿透结论"}
 （完整字段规则见 references/system_prompt.md）
 
+🔴 `nodes` 每项必须有 `id` 字段；`edges.from/to` 通过 `id` 引用；`center` 用 `label/sub`（**不是** `name/note/color`）。漏 `id` 或用 `name` → 关系穿透图渲染异常。
+
 ## 实体辨析（关键，仅当品牌≠法律主体或名称易混淆时）
 - [L1 硬数据] 实际雇主法律主体全称 + 统一社会信用代码 + 与母公司股权关系。
 - [L4 用户情报] 提醒核实劳动合同 / 社保主体是否为该法律实体，避免投错「同名不同主体」。
