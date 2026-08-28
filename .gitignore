@@ -1,0 +1,14 @@
+# 生成的渲染产物（非源码）
+*.html
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 系统
+.DS_Store
+
+# 本地临时
+/tmp/
+*.tmp
