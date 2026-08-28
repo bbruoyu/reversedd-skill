@@ -23,16 +23,16 @@
 ```relationship-graph
 {
   "layout": "hierarchy",
-  "center": {"name": "示例科技集团（母）", "note": "控股方", "color": "g"},
+  "center": {"label": "示例科技（宁波）有限公司", "sub": "被背调主体 · 培训经理实际雇主", "type": "company", "risk": "a"},
   "nodes": [
-    {"name": "示例科技（宁波）有限公司", "note": "被背调主体（直营子公司）", "color": "r"},
-    {"name": "宁波分公司 / 培训中心", "note": "实际用工与培训落地", "color": "a"},
-    {"name": "万人交付团队", "note": "业务交付侧", "color": "a"}
+    {"id": "group", "label": "示例科技集团（母）", "sub": "控股方", "type": "group", "risk": "g"},
+    {"id": "train", "label": "宁波分公司 / 培训中心", "sub": "实际用工与培训落地", "type": "company", "risk": "a"},
+    {"id": "deliver", "label": "万人交付团队", "sub": "业务交付侧", "type": "company", "risk": "a"}
   ],
   "edges": [
-    {"from": "示例科技集团（母）", "to": "示例科技（宁波）有限公司"},
-    {"from": "示例科技（宁波）有限公司", "to": "宁波分公司 / 培训中心"},
-    {"from": "示例科技（宁波）有限公司", "to": "万人交付团队"}
+    {"from": "center", "to": "group", "label": "隶属"},
+    {"from": "center", "to": "train", "label": "培训落地"},
+    {"from": "center", "to": "deliver", "label": "交付"}
   ],
   "caption": "决策集中，培训职能落地需面核集团与本地分工"
 }
