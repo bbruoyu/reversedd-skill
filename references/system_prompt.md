@@ -119,6 +119,14 @@
 - `caption`：一句话穿透结论（如「劳务壳已内化 → 用工合规是接手即面对的雷」）
 - `layout`：布局模式，**默认 `hierarchy`（上下层级 org-chart）**——`center` 在最顶层，渲染器按 `edges` 的 `from→to` 自动向下展开成树状结构（实控人→集团→关联实体）；如需主体居中、关联方环绕可设 `radial`。
 
+🔴 **字段铁律（不遵守 → 关系穿透图渲染异常，只剩默认「被背调主体」红框，其余节点/连线全丢）**：
+- `center` 字段名 = `label` / `sub` / `type` / `risk`（**不是** `name` / `note` / `color`）
+- `nodes` 每项**必须带 `id` 字段**——`edges` 的 `from` / `to` 通过 `id` 引用；漏 `id` 的节点不会被画出
+- `edges.from` / `edges.to` 必须是 `"center"` 或某节点的 `id`（**不是中文名**）；无父节点的孤儿节点会被渲染器自动挂到 `center` 下，无需手动连
+- `risk` 可选，缺省按"r"红框；`type` 可选（person / company / group / risk）仅影响框色主题
+
+✅ 正确示例见下方。常见错误：把 `label` 写成 `name`、节点无 `id`、edge 用中文名 → 渲染器只回退到默认"被背调主体"红框，看起来"图坏了"但其实是数据没按 schema 填。
+
 示例（注意：这是给你看的字段格式样例，正式输出时请用 ```relationship-graph 围栏包裹）：
     {"center":{"label":"示例公司","sub":"被背调主体"},"nodes":[{"id":"u1","label":"实控人","sub":"董事长 69%","type":"person","risk":"a"},{"id":"c1","label":"母公司","sub":"控股","type":"company","risk":"g"}],"edges":[{"from":"center","to":"u1","label":"持股69%"},{"from":"u1","to":"c1","label":"控制"}],"caption":"决策集中，需面试核实"}
 
