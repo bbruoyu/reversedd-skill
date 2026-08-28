@@ -10,7 +10,7 @@
 </p>
 
 <p align="center"><sub>
-  ▲ 完整报告示例 · 风险雷达 + 关系穿透图 + 关键证据（L1·L3·L4 来源徽章）+ 面试反问 + 决策建议<br>
+  ▲ 报告示例（顶部节选）· 风险雷达 + 关系穿透图 + 关键证据（L1·L3·L4 来源徽章）<br>
   👉 渲染你自己的报告：<code>python scripts/render_report.py 你的报告.md -o 你的报告.html</code>
 </sub></p>
 
