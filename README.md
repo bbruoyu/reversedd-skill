@@ -47,6 +47,17 @@ reversedd-skill/
 
 支持：腾讯元器 / 扣子 Coze / Dify / 自建后端 / 本机 WorkBuddy。
 
+#### 在 WorkBuddy 中安装（本机推荐）
+
+把整个 `reversedd-skill/` 文件夹放进 WorkBuddy 的技能目录即可，零配置：
+
+```bash
+cp -r reversedd-skill ~/.workbuddy/skills/reversedd-skill
+```
+
+刷新 / 重启 WorkBuddy 后，在对话里说「反向背调 XX 公司」「查一下 XX 公司」即可触发。
+（也可在 WorkBuddy 的 Skills 面板用「从本地目录导入」加载。）
+
 ### 2. 可选：渲染可视化 HTML 报告
 
 需要 Python 3.8+（仅标准库，无网络、无 API key）：
