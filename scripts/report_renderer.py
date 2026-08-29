@@ -141,7 +141,7 @@ def _node_style(node: dict) -> tuple:
 def _build_relationship_svg(graph) -> str:
     """关系穿透图入口：按 graph.layout 选择布局。
 
-    默认 hierarchy（上下层级 org-chart，匹配旗舰「新日月」关系穿透图风格）；
+    默认 hierarchy（上下层级 org-chart，匹配旗舰关系穿透图风格）；
     设 layout="radial" 回退到主体居中环绕布局。
     """
     if not isinstance(graph, dict):
@@ -284,7 +284,7 @@ def _build_relationship_svg_radial(graph) -> str:
 
 
 def _build_relationship_svg_hierarchy(graph) -> str:
-    """上下层级 org-chart 布局（匹配旗舰「新日月」关系穿透图风格）。
+    """上下层级 org-chart 布局（匹配旗舰关系穿透图风格）。
 
     数据驱动：center 为根，edges 的 from->to 决定父子层级；渲染器自动分层、
     均分横排、画父子连线（带绿色箭头）。节点框配色沿用 _node_style（红/绿/黄/灰）。
