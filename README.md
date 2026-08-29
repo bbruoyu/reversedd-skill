@@ -1,9 +1,33 @@
+<div align="center">
+
 # reversedd-skill
-> 反向背调 · 求职者避坑。
 
-一个开源的「求职者反向背调」agent skill：帮候选人反向背调公司——把公司的对外话术翻译成真实风险，把一条避雷帖验证成软硬交叉结论。
+> 「报个公司名。回车。一份签字前该看的避坑报告。」
+> *"Name a company. Hit enter. A red-flag report you read before you sign."*
 
-> 平时都是公司背调候选人，这个 skill 帮候选人反向背调公司。
+**反向背调 · 求职者避坑。**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Agent-Agnostic](https://img.shields.io/badge/Agent-Agnostic-blueviolet)](https://skills.sh)
+[![No API Key](https://img.shields.io/badge/API%20Key-不需要-blue)](https://github.com/bbruoyu/reversedd-skill)
+
+<br>
+
+**在你的 agent 里报个公司名，拿回一份签字前该看的避坑报告。**
+
+<br>
+
+平时都是公司背调你，这次反过来。你会拿到：一份七维风险雷达与红黄绿灯结论、一张从母品牌穿透到关联壳 / 子公司 / 分公司的关系图、一份按你求职阶段定制的面试反问清单，和一句「去 / 不去」的决策建议。
+
+不是「小红书避雷帖聚合器」那类二手情绪——是裁判文书网的劳动争议、失信被执行记录、行政处罚、年报参保人数趋势。给 skill 你刷到的那条避雷帖，它拿去硬源交叉验证是真还是假；一条都不给，纯公开检索 + 政府公开站也能跑出完整报告，**零后端、零 API key、零登录**。
+
+你在这篇 README 顶部看到的那张风险雷达，就是 reversedd-skill 自己渲的。不是付费企查查会员，不是爬虫面板，就是一句话 + skill 跑通，纯标准库离线出图。下次拿到 offer 心里没底？现在你自己就能查。
+
+[能做什么](#它能做什么) · [装上就能用](#快速开始) · [设计原则](#设计原则) · [目录结构](#目录结构)
+
+</div>
+
+---
 
 <p align="center">
   <img src="https://github.com/bbruoyu/reversedd-skill/releases/download/v0.1.1/example_report.png" alt="反向背调报告 · 六维 + 治理风险雷达章节（示例公司 HRD · 高管视角）" width="100%">
