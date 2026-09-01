@@ -29,12 +29,7 @@
 
 ---
 
-<p align="center">
-  <img src="https://github.com/bbruoyu/reversedd-skill/releases/download/v0.1.1/example_report.png" alt="反向背调报告 · 六维 + 治理风险雷达章节（示例公司 HRD · 高管视角）" width="100%">
-</p>
-
 <p align="center"><sub>
-  ▲ 反向背调报告 · 六维 + 治理风险雷达章节（示例公司 HRD · 高管视角）+ 控制权集中度 96.57% 一言堂信号（示例数据，已脱敏）<br>
   👉 渲染你自己的报告：<code>python scripts/render_report.py 你的报告.md -o 你的报告.html</code>
 </sub></p>
 
