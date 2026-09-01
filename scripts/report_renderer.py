@@ -536,9 +536,6 @@ def _build_meta_html(meta_lines, meta, company_fallback):
         else:
             parts.append(f'<div{cls}>{_esc(val)}</div>')
     return "".join(parts)
-    if s is None:
-        return ""
-    return html.escape(str(s), quote=True)
 
 
 def _inline(s: str) -> str:
