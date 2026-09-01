@@ -63,6 +63,6 @@
 |---|---|
 | `system_prompt.md` | 核心系统提示词，粘到任意平台的 System Prompt 框 |
 | `knowledge_base.md` | 知识库（硬风险源核查 / 检索话术 / 黑话解码 / 面试清单），作知识库上传或拼接 |
-| `IMPORT_GUIDE.md` | 本文件，部署与合规指引 |
+| `import_guide.md` | 本文件，部署与合规指引 |
 
 > 本开源包即完整可运行版本，可直接分发给终端求职者使用。
