@@ -183,13 +183,15 @@ if __name__ == "__main__":
     if not data:
         sys_msg = {"ok": False, "message": "未获取到财报数据（请确认代码正确且为上市公司）"}
         if args.output:
-            open(args.output, "w", encoding="utf-8").write(json.dumps(sys_msg, ensure_ascii=False, indent=2))
+            with open(args.output, "w", encoding="utf-8") as _f:
+                _f.write(json.dumps(sys_msg, ensure_ascii=False, indent=2))
         else:
             print(json.dumps(sys_msg, ensure_ascii=False, indent=2))
         raise SystemExit(1)
 
     if args.output:
-        open(args.output, "w", encoding="utf-8").write(json.dumps(data, ensure_ascii=False, indent=2))
+        with open(args.output, "w", encoding="utf-8") as _f:
+            _f.write(json.dumps(data, ensure_ascii=False, indent=2))
         print(f"[完成] 已写入：{args.output}")
     else:
         print(json.dumps(data, ensure_ascii=False, indent=2))
