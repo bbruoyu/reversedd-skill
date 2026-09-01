@@ -40,11 +40,14 @@ def main():
     if args.financials:
         if not os.path.isfile(args.financials):
             sys.exit(f"[错误] 找不到财报文件：{args.financials}")
-        financials = json.load(open(args.financials, encoding="utf-8"))
+        with open(args.financials, encoding="utf-8") as _f:
+            financials = json.load(_f)
 
-    markdown = open(in_path, encoding="utf-8").read()
+    with open(in_path, encoding="utf-8") as _f:
+        markdown = _f.read()
     html = render_report(markdown, financials=financials)  # meta 从 markdown 的 blockquote + 关系图 fenced 块解析
-    open(out_path, "w", encoding="utf-8").write(html)
+    with open(out_path, "w", encoding="utf-8") as _f:
+        _f.write(html)
     print(f"[完成] 已渲染：{out_path}  ({len(html)} 字符)" + ("  （含财务快照）" if financials else ""))
 
 
