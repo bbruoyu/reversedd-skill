@@ -1,15 +1,18 @@
 <div align="center">
 
-# reversedd-skill
+# goodfit-skill
 
-> 「报个公司名。回车。一份签字前该看的避坑报告。」
-> *"Name a company. Hit enter. A red-flag report you read before you sign."*
+> **求职是双向选择，你也可以「反向背调」公司。**
+> *"Job seeking is a two-way street — check the company before you sign."*
+
+「报个公司名。回车。一份签字前该看的避坑报告。」
+*"Name a company. Hit enter. A red-flag report you read before you sign."*
 
 **反向背调 · 求职者避坑。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Agent-Agnostic](https://img.shields.io/badge/Agent-Agnostic-blueviolet)](https://skills.sh)
-[![No API Key](https://img.shields.io/badge/API%20Key-不需要-blue)](https://github.com/bbruoyu/reversedd-skill)
+[![No API Key](https://img.shields.io/badge/API%20Key-不需要-blue)](https://github.com/bbruoyu/goodfit-skill)
 
 <br>
 
@@ -46,7 +49,7 @@
 ## 目录结构
 
 ```
-reversedd-skill/
+goodfit-skill/
 ├── SKILL.md                       # skill 入口（描述 + 工作流 + 引用）
 ├── LICENSE                       # MIT
 ├── README.md
@@ -77,10 +80,10 @@ reversedd-skill/
 
 #### 在 WorkBuddy 中安装（本机推荐）
 
-把整个 `reversedd-skill/` 文件夹放进 WorkBuddy 的技能目录即可，零配置：
+把整个 `goodfit-skill/` 文件夹放进 WorkBuddy 的技能目录即可，零配置：
 
 ```bash
-cp -r reversedd-skill ~/.workbuddy/skills/reversedd-skill
+cp -r goodfit-skill ~/.workbuddy/skills/goodfit-skill
 ```
 
 刷新 / 重启 WorkBuddy 后，在对话里说「反向背调 XX 公司」「查一下 XX 公司」即可触发。
