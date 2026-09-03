@@ -12,7 +12,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Agent-Agnostic](https://img.shields.io/badge/Agent-Agnostic-blueviolet)](https://skills.sh)
-[![No API Key](https://img.shields.io/badge/API%20Key-不需要-blue)](https://github.com/bbruoyu/goodfit-skill)
+[![No API Key](https://img.shields.io/badge/API%20Key-不需要-blue)](https://github.com/xianyulab/goodfit-skill)
 
 <br>
 
